@@ -2,7 +2,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="w-full bg-gray-1000 text-white py-2 px-6 mt-2">
+    <footer className="w-full bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-white py-2 px-6 mt-2 transition-colors duration-300">
       <div className="max-w-2xl mx-auto">
         {/* Shortcuts */}
         <div className="mb-1">
@@ -17,8 +17,8 @@ export default function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="border-t border-grey-700 pt-1">
-          <p className="text-sm text-white-500 text-center">
+        <div className="border-t border-gray-300 dark:border-gray-700 pt-1">
+          <p className="text-sm text-gray-500 dark:text-gray-400 text-center">
             &copy; {currentYear} Everett Merrill. All rights reserved.
           </p>
         </div>
