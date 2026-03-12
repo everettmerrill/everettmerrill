@@ -2,8 +2,36 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
+    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-pink-400">
+   <main className="relative flex w-full max-w-3xl flex-col items-center justify-start px-16 bg-pink-200 sm:items-start" style={{ minHeight: "calc(100vh - 32px)" }}>
+  <Image
+    src="/GameManColor.png"
+    alt="GamesMan Color Background"
+    fill
+    style={{ objectFit: "contain" }}
+    className="z-0"
+  />
+  <div className="flex flex-col items-center w-full z-10 mt-[80px]">
+    <Image
+      src="/HireHimLogo.png"
+      alt="HireHim"
+      height={200}
+      width={400}
+    />
+    <Image
+      src="/EverettMerrillVersion.png"
+      alt="Version Name"
+      height={250}
+      width={500}
+      className="mt-[-100px]"
+    />
+  </div>
+</main>
+    </div>
+  );
+}
+        /* </Image>
+        </main>
         <Image
           className="dark:invert"
           src="/next.svg"
@@ -58,8 +86,7 @@ export default function Home() {
           >
             Documentation
           </a>
-        </div>
-      </main>
-    </div>
-  );
-}
+        </div> */
+      
+    
+  
